@@ -10,7 +10,7 @@ This repository contains materials which are used in the course for iOS programm
 
 A short list of the covered topics in each lecture.
 
-### Week1 
+### Week 1 
 1. Course overview. Xcode, developer.apple.com, swift.org and Swift.
 1. Swift Basics
     1. Constant and variable
@@ -23,3 +23,16 @@ A short list of the covered topics in each lecture.
     1. loops - `for in`, `while`, `repeat while`
     1. Collections - `Dictionary`, `Array`, `Set`
     1. Git & Github - brief introduction
+### Week 2
+1. Swift Basics
+    1. Optional types - `Int?`, `String?`, `(name: String?, grades: [String])?`, `[Int]?`
+    1. Functions 
+        1. without parameters
+        1. with parameters
+        1. which return result
+        1. which return more than one result (tuple, array)
+        1. with `inout` parameters
+        1. with labels 
+        1. without labels `_`
+        1. inner functions
+        1. operators 
