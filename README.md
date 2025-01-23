@@ -5,6 +5,7 @@ This repository contains materials which are used in the course for iOS programm
 ## Homeworks
 
 * [Homework 1](./homework/week1.md)
+* [Homework 2](./homework/week2.md)
 
 ## Topics
 
@@ -36,3 +37,19 @@ A short list of the covered topics in each lecture.
         1. without labels `_`
         1. inner functions
         1. operators 
+1.Structures - `struct`
+    1. Structure with stored properties
+    1. Structure with default values
+    1. Structure with custom `init()`
+    1. Structure with initializer with default values
+    1. Delegate initialization
+    1. Methods
+    1. Subscript
+    1. Static property
+    1. Functions with variadic parameters
+    1. Functions with parameters that have default values
+    1. Access levels 
+    1. Properties - `set` and `get`
+    1. `Get` only property (computed property)
+    1. Property obeserves - `willSet`, `didSet` 
+    1. lazy properties
