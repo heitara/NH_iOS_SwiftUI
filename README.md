@@ -6,6 +6,7 @@ This repository contains materials which are used in the course for iOS programm
 
 * [Homework 1](./homework/week1.md)
 * [Homework 2](./homework/week2.md)
+* [Homework 3](./homework/week3.md)
 
 ## Topics
 
@@ -37,7 +38,7 @@ A short list of the covered topics in each lecture.
         1. without labels `_`
         1. inner functions
         1. operators 
-1.Structures - `struct`
+1. Structures - `struct`
     1. Structure with stored properties
     1. Structure with default values
     1. Structure with custom `init()`
@@ -53,3 +54,17 @@ A short list of the covered topics in each lecture.
     1. `Get` only property (computed property)
     1. Property obeserves - `willSet`, `didSet` 
     1. lazy properties
+### Week 3
+1. Classes - `class` - reference type
+    1. Default initializer `init()` - only when all stored props have default values
+    1. At least one initializer to be able to construct an object
+    1. `convenient` initializers, which deleage the initialization and customize on top
+    1. Inheritance - `class MyClass : Base { }`
+    1. `super` is used to refer to the inherited parts (similar to `self`)
+    1. An initializer should call a designated parent initializer using `super`
+    1. redefine methods in a child class - `override`
+    1. properties - same as in structures
+    1. properties can be re-defined with `override`
+    1. memory management - ARC
+    1. `weak` and `unowned` to resolve loops 
+    1. functions (closures) are storing references - use the capture list properly 
