@@ -1,7 +1,6 @@
 ### Task 1: **Download and configure Xcode**
 
 Download and configure the most recent supported version of Xcode on you mac.
-
 Download iOS platform from compoents tab (Cmd + , -> Components). 
 
 
@@ -31,3 +30,11 @@ Create a new commit with this change only.
 
 Link your local git with the repoitory you had create on github.
 Push all commits to Github.
+
+
+### Bonus: **Deploy on iOS device**
+
+Configure Sign & Capabilities, so that you can deploy on your iOS device if you have one.
+
+> Put you iOS device in [Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device)
+> You will need a developer account. Register one for free at developer.apple.com.
