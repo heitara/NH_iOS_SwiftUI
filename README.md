@@ -7,6 +7,7 @@ This repository contains materials which are used in the course for iOS programm
 * [Homework 1](./homework/week1.md)
 * [Homework 2](./homework/week2.md)
 * [Homework 3](./homework/week3.md)
+* [Homework 4](./homework/week3.md)
 
 ## Topics
 
