@@ -18,6 +18,46 @@ class Media {
 
 //Protocol Oriented Programming
 
+protocol Sellable {
+    var pricePerUnit: Double { get }
+    // obj.pricePerUnit
+    
+    
+    var isAvailable: Bool { set get }
+    // obj.isAvailable = true; var b = obj.isAvailable
+    
+    func version() -> String
+}
+
+protocol Printable {
+    var description: String { get }
+    func version() -> String
+}
+
+struct Machine: Sellable, Printable {
+    var description = ""
+    var powerConsumption = 0
+    var model = "no name"
+    
+    var pricePerUnit: Double = 0 // set get
+    var isAvailable: Bool = false
+    
+    private(set) var machineSoftwareVersion = "0.1"
+    
+    func version() -> String {
+        "V. (\(machineSoftwareVersion))"
+    }
+}
+
+let washingMachine = Machine(description: "Washing Machine", powerConsumption: 500, model: "LG", pricePerUnit: 300, isAvailable: true, machineSoftwareVersion: "1.0.1")
+
+//print(washingMachine.version())
+
+//let printableMachine: Printable = washingMachine
+
+
+
+
 
 let movie = Media(name: "", sizeInBytes: 100.0)
 movie.name = "X-men" // not possible if Media is a struct !!!
