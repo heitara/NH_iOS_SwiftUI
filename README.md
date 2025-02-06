@@ -7,6 +7,7 @@ This repository contains materials which are used in the course for iOS programm
 * [Homework 1](./homework/week1.md)
 * [Homework 2](./homework/week2.md)
 * [Homework 3](./homework/week3.md)
+* [Homework 4](./homework/week4.md)
 
 ## Topics
 
@@ -68,3 +69,40 @@ A short list of the covered topics in each lecture.
     1. memory management - ARC
     1. `weak` and `unowned` to resolve loops 
     1. functions (closures) are storing references - use the capture list properly 
+1. Protocols, Extensions and Closures 
+    1. What is a `protocol`?
+    1. What is an `extension`?
+    1. How do provide a default implementation to a protocol? (optional methods)
+    1. `Enums` with associated values
+    1. Closures
+        1. functions as obejcts
+        1. capture list
+        1. memory management using classes and closures
+        1. default argument names `$0`, `$1`, ...
+        1. `@escaping` attribute
+        1. functions which return functions(closures)
+### Week 4
+1. App Design Cycle
+    1. define
+    1. prototype
+    1. test
+    1. analyze
+    1. iterate
+    1. [app-design-workbook](https://www.apple.com/au/education/docs/app-design-workbook-AU.pdf)
+    1. [app-design-workbook as keynote](https://education-static.apple.com/coding-club-kit/appworkbook.key)
+    1. [Apple Design Resources] (https://developer.apple.com/design/resources/)
+    1. Define:
+        1. Observe
+        1. Take notes
+        1. Define ideas
+        1. Brainstorm
+        1. Order ideas by importance
+        1. Define MVP
+    1. Prototyping:
+        1. Use Pen & Paper to define main screens and main flow
+        1. Use Keynote/Powerpoint
+        1. Refine v.0.1, by adding more details 
+            1. what buttons
+            1. where they should be located
+            1. test with real users (ask them questions, video recording)
+    1. 
