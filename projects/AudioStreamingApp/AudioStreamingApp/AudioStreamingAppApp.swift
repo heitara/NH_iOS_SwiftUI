@@ -12,7 +12,8 @@ struct AudioStreamingAppApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            ContainersView()
+//            ContainersView()
+            MenuView()
         }
     }
 }
