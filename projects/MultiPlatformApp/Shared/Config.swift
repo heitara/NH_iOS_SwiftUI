@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+let HELLO_SWIFTUI = "Hello SwiftUI!📱"

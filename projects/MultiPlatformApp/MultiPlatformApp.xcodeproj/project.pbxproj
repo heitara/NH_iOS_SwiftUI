@@ -6,14 +6,52 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9EB37A5E2D5E535600FA0686 /* DemoWatchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9EB37A5D2D5E535600FA0686 /* DemoWatchApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9EB37A742D5E54A900FA0686 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB37A732D5E54A900FA0686 /* Config.swift */; };
+		9EB37A752D5E54A900FA0686 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB37A732D5E54A900FA0686 /* Config.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EB37A5F2D5E535600FA0686 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EB37A3C2D5E517E00FA0686 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EB37A5C2D5E535600FA0686;
+			remoteInfo = "DemoWatchApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9EB37A6E2D5E535900FA0686 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9EB37A5E2D5E535600FA0686 /* DemoWatchApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9EB37A442D5E517E00FA0686 /* MultiPlatformApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiPlatformApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB37A582D5E535600FA0686 /* DemoWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB37A5D2D5E535600FA0686 /* DemoWatchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DemoWatchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB37A732D5E54A900FA0686 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9EB37A462D5E517E00FA0686 /* MultiPlatformApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MultiPlatformApp;
+			sourceTree = "<group>";
+		};
+		9EB37A612D5E535600FA0686 /* DemoWatchApp Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "DemoWatchApp Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +64,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9EB37A5A2D5E535600FA0686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9EB37A3B2D5E517E00FA0686 = {
 			isa = PBXGroup;
 			children = (
+				9EB37A722D5E541C00FA0686 /* Shared */,
 				9EB37A462D5E517E00FA0686 /* MultiPlatformApp */,
+				9EB37A612D5E535600FA0686 /* DemoWatchApp Watch App */,
 				9EB37A452D5E517E00FA0686 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +88,18 @@
 			isa = PBXGroup;
 			children = (
 				9EB37A442D5E517E00FA0686 /* MultiPlatformApp.app */,
+				9EB37A582D5E535600FA0686 /* DemoWatchApp.app */,
+				9EB37A5D2D5E535600FA0686 /* DemoWatchApp Watch App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9EB37A722D5E541C00FA0686 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9EB37A732D5E54A900FA0686 /* Config.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +127,47 @@
 			productReference = 9EB37A442D5E517E00FA0686 /* MultiPlatformApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9EB37A572D5E535600FA0686 /* DemoWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB37A6F2D5E535900FA0686 /* Build configuration list for PBXNativeTarget "DemoWatchApp" */;
+			buildPhases = (
+				9EB37A562D5E535600FA0686 /* Resources */,
+				9EB37A6E2D5E535900FA0686 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EB37A602D5E535600FA0686 /* PBXTargetDependency */,
+			);
+			name = DemoWatchApp;
+			packageProductDependencies = (
+			);
+			productName = DemoWatchApp;
+			productReference = 9EB37A582D5E535600FA0686 /* DemoWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		9EB37A5C2D5E535600FA0686 /* DemoWatchApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB37A6B2D5E535900FA0686 /* Build configuration list for PBXNativeTarget "DemoWatchApp Watch App" */;
+			buildPhases = (
+				9EB37A592D5E535600FA0686 /* Sources */,
+				9EB37A5A2D5E535600FA0686 /* Frameworks */,
+				9EB37A5B2D5E535600FA0686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9EB37A612D5E535600FA0686 /* DemoWatchApp Watch App */,
+			);
+			name = "DemoWatchApp Watch App";
+			packageProductDependencies = (
+			);
+			productName = "DemoWatchApp Watch App";
+			productReference = 9EB37A5D2D5E535600FA0686 /* DemoWatchApp Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -81,6 +179,12 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					9EB37A432D5E517E00FA0686 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9EB37A572D5E535600FA0686 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9EB37A5C2D5E535600FA0686 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -100,12 +204,28 @@
 			projectRoot = "";
 			targets = (
 				9EB37A432D5E517E00FA0686 /* MultiPlatformApp */,
+				9EB37A572D5E535600FA0686 /* DemoWatchApp */,
+				9EB37A5C2D5E535600FA0686 /* DemoWatchApp Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9EB37A422D5E517E00FA0686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB37A562D5E535600FA0686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB37A5B2D5E535600FA0686 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,10 +239,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB37A742D5E54A900FA0686 /* Config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB37A592D5E535600FA0686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB37A752D5E54A900FA0686 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EB37A602D5E535600FA0686 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EB37A5C2D5E535600FA0686 /* DemoWatchApp Watch App */;
+			targetProxy = 9EB37A5F2D5E535600FA0686 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9EB37A512D5E518000FA0686 /* Debug */ = {
@@ -248,6 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MultiPlatformApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 325SNGXV22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -285,6 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MultiPlatformApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 325SNGXV22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -313,6 +452,94 @@
 			};
 			name = Release;
 		};
+		9EB37A6C2D5E535900FA0686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoWatchApp Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DemoWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bg.newhorizons.DemoWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		9EB37A6D2D5E535900FA0686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoWatchApp Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DemoWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bg.newhorizons.DemoWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		9EB37A702D5E535900FA0686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = DemoWatchApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bg.newhorizons.DemoWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9EB37A712D5E535900FA0686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = DemoWatchApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bg.newhorizons.DemoWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -330,6 +557,24 @@
 			buildConfigurations = (
 				9EB37A542D5E518000FA0686 /* Debug */,
 				9EB37A552D5E518000FA0686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB37A6B2D5E535900FA0686 /* Build configuration list for PBXNativeTarget "DemoWatchApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB37A6C2D5E535900FA0686 /* Debug */,
+				9EB37A6D2D5E535900FA0686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB37A6F2D5E535900FA0686 /* Build configuration list for PBXNativeTarget "DemoWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB37A702D5E535900FA0686 /* Debug */,
+				9EB37A712D5E535900FA0686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
