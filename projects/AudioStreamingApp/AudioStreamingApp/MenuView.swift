@@ -9,19 +9,25 @@ import SwiftUI
 
 struct MenuView: View {
     var body: some View {
-        List(0..<5000) { item in
-            HStack {
-                VStack {
-                    Text("Item \(item + 1)")
-                    Text("Subtitle")
-                        .font(.system(size: 12))
-                        .foregroundStyle(.gray)
+        ScrollView {
+            LazyVStack{
+                ForEach(0..<500000) { item in
+                    HStack {
+                        VStack {
+                            Text("Item \(item + 1)")
+                            Text("Subtitle")
+                                .font(.system(size: 12))
+                                .foregroundStyle(.gray)
+                        }
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .foregroundStyle(.gray)
+                    }
+                    .padding()
+                    Divider()
                 }
-                Spacer()
-                Image(systemName: "chevron.right")
-                    .foregroundStyle(.gray)
+                
             }
-            
         }
     }
 }
