@@ -11,9 +11,23 @@ struct ContainersView: View {
     var body: some View {
         VStack(spacing: 10) {
             HStack(spacing: 0) {
+                Image(systemName: "star")
+                    .resizable()
+                    .foregroundColor(Color.orange)
+                    .frame(width: 100, height: 100)
                 Text("First item")
+                Image(systemName: "star")
+                    .foregroundColor(Color.orange)
+                    .frame(width: 100, height: 100)
                 Text("Second item")
+                Image(systemName: "star")
+                    .foregroundColor(Color.orange)
+                    .frame(width: 100, height: 100)
                 Text("Third item")
+                Image(systemName: "star")
+                    .resizable()
+                    .foregroundColor(Color.orange)
+                    .frame(width: 50, height: 50)
             }
             VStack(alignment: .leading, spacing: 0) {
                 Spacer()
