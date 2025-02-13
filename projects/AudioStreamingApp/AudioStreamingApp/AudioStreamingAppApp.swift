@@ -11,7 +11,8 @@ import SwiftUI
 struct AudioStreamingAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            ContainersView()
         }
     }
 }
