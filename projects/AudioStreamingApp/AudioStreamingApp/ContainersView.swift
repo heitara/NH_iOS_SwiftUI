@@ -7,6 +7,17 @@
 
 import SwiftUI
 
+struct Triangle: Shape {
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: rect.midX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        path.closeSubpath()
+        return path
+    }
+}
+
 struct ContainersView: View {
     var body: some View {
         VStack(spacing: 10) {
@@ -36,14 +47,24 @@ struct ContainersView: View {
                 Text("Second item")
                 Spacer()
                 Text("Third item")
+                Circle()
+                    .fill(Color.blue)
+                RoundedRectangle(cornerSize: CGSizeMake(5, 5))
+                    .stroke(style: .init(lineWidth:10, lineCap: .round, lineJoin: .round, miterLimit: 0, dash: [1.0, 0.5, 1.0], dashPhase: 2.0))
+                    .fill(Color.blue)
                 Spacer()
+                Triangle()
+                    .fill(Color.purple)
+//                    .frame(width: 100, height: 100)
 //                    .frame(maxWidth: .infinity)
             }
             .frame(width: 300)
             .foregroundStyle(.green)
             .background(Color.pink)
             ZStack(alignment: .center) {
-                Color.cyan
+//                Color.cyan
+                Rectangle()
+                    .fill(LinearGradient(colors: [.blue, .green], startPoint: .top, endPoint: .bottomLeading))
                 Text("ZCenter")
                 Button("Hello!") {
                     print("Hello!")
@@ -52,9 +73,6 @@ struct ContainersView: View {
 //                Text("ZSecond item")
 //                Text("ZThird item")
             }
-            .frame(width: 100, height: 500)
-            .foregroundStyle(.red)
-            .background(Color.cyan)
         }
         
     }
