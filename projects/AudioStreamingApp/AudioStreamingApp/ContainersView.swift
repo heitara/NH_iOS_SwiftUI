@@ -42,10 +42,15 @@ struct ContainersView: View {
             .frame(width: 300)
             .foregroundStyle(.green)
             .background(Color.pink)
-            ZStack(alignment: .bottomTrailing) {
-                Text("ZFirst item")
-                Text("ZSecond item")
-                Text("ZThird item")
+            ZStack(alignment: .center) {
+                Color.cyan
+                Text("ZCenter")
+                Button("Hello!") {
+                    print("Hello!")
+                }
+                .buttonStyle(.borderedProminent)
+//                Text("ZSecond item")
+//                Text("ZThird item")
             }
             .frame(width: 100, height: 500)
             .foregroundStyle(.red)
