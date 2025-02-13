@@ -6,121 +6,119 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		9E97AAAE2D551B1D00F38E39 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E97AAAD2D551B1D00F38E39 /* AVFoundation.framework */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		9E78D6B02D528F3300B216A9 /* AudioStreamingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioStreamingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E97AAAD2D551B1D00F38E39 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9EC72EB02D5BB29C0019E05D /* DemoUIKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoUIKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9EC72EC22D5BB2A00019E05D /* Exceptions for "DemoUIKitApp" folder in "DemoUIKitApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9EC72EAF2D5BB29C0019E05D /* DemoUIKitApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9E78D6B22D528F3300B216A9 /* AudioStreamingApp */ = {
+		9EC72EB22D5BB29C0019E05D /* DemoUIKitApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AudioStreamingApp;
+			exceptions = (
+				9EC72EC22D5BB2A00019E05D /* Exceptions for "DemoUIKitApp" folder in "DemoUIKitApp" target */,
+			);
+			path = DemoUIKitApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9E78D6AD2D528F3300B216A9 /* Frameworks */ = {
+		9EC72EAD2D5BB29C0019E05D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E97AAAE2D551B1D00F38E39 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9E78D6A72D528F3300B216A9 = {
+		9EC72EA72D5BB29C0019E05D = {
 			isa = PBXGroup;
 			children = (
-				9E78D6B22D528F3300B216A9 /* AudioStreamingApp */,
-				9E97AAAC2D551B1D00F38E39 /* Frameworks */,
-				9E78D6B12D528F3300B216A9 /* Products */,
+				9EC72EB22D5BB29C0019E05D /* DemoUIKitApp */,
+				9EC72EB12D5BB29C0019E05D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9E78D6B12D528F3300B216A9 /* Products */ = {
+		9EC72EB12D5BB29C0019E05D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E78D6B02D528F3300B216A9 /* AudioStreamingApp.app */,
+				9EC72EB02D5BB29C0019E05D /* DemoUIKitApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9E97AAAC2D551B1D00F38E39 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9E97AAAD2D551B1D00F38E39 /* AVFoundation.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E78D6AF2D528F3300B216A9 /* AudioStreamingApp */ = {
+		9EC72EAF2D5BB29C0019E05D /* DemoUIKitApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E78D6BE2D528F3700B216A9 /* Build configuration list for PBXNativeTarget "AudioStreamingApp" */;
+			buildConfigurationList = 9EC72EC32D5BB2A00019E05D /* Build configuration list for PBXNativeTarget "DemoUIKitApp" */;
 			buildPhases = (
-				9E78D6AC2D528F3300B216A9 /* Sources */,
-				9E78D6AD2D528F3300B216A9 /* Frameworks */,
-				9E78D6AE2D528F3300B216A9 /* Resources */,
+				9EC72EAC2D5BB29C0019E05D /* Sources */,
+				9EC72EAD2D5BB29C0019E05D /* Frameworks */,
+				9EC72EAE2D5BB29C0019E05D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				9E78D6B22D528F3300B216A9 /* AudioStreamingApp */,
+				9EC72EB22D5BB29C0019E05D /* DemoUIKitApp */,
 			);
-			name = AudioStreamingApp;
+			name = DemoUIKitApp;
 			packageProductDependencies = (
 			);
-			productName = AudioStreamingApp;
-			productReference = 9E78D6B02D528F3300B216A9 /* AudioStreamingApp.app */;
+			productName = DemoUIKitApp;
+			productReference = 9EC72EB02D5BB29C0019E05D /* DemoUIKitApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9E78D6A82D528F3300B216A9 /* Project object */ = {
+		9EC72EA82D5BB29C0019E05D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					9E78D6AF2D528F3300B216A9 = {
+					9EC72EAF2D5BB29C0019E05D = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 9E78D6AB2D528F3300B216A9 /* Build configuration list for PBXProject "AudioStreamingApp" */;
+			buildConfigurationList = 9EC72EAB2D5BB29C0019E05D /* Build configuration list for PBXProject "DemoUIKitApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 9E78D6A72D528F3300B216A9;
+			mainGroup = 9EC72EA72D5BB29C0019E05D;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 9E78D6B12D528F3300B216A9 /* Products */;
+			productRefGroup = 9EC72EB12D5BB29C0019E05D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E78D6AF2D528F3300B216A9 /* AudioStreamingApp */,
+				9EC72EAF2D5BB29C0019E05D /* DemoUIKitApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9E78D6AE2D528F3300B216A9 /* Resources */ = {
+		9EC72EAE2D5BB29C0019E05D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9E78D6AC2D528F3300B216A9 /* Sources */ = {
+		9EC72EAC2D5BB29C0019E05D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -140,7 +138,61 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9E78D6BC2D528F3700B216A9 /* Debug */ = {
+		9EC72EC42D5BB2A00019E05D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoUIKitApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bg.newhorizons.DemoUIKitApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EC72EC52D5BB2A00019E05D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoUIKitApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bg.newhorizons.DemoUIKitApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9EC72EC62D5BB2A00019E05D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -192,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -203,7 +255,7 @@
 			};
 			name = Debug;
 		};
-		9E78D6BD2D528F3700B216A9 /* Release */ = {
+		9EC72EC72D5BB2A00019E05D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -259,96 +311,28 @@
 			};
 			name = Release;
 		};
-		9E78D6BF2D528F3700B216A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AudioStreamingApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 325SNGXV22;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bg.newhorizons.AudioStreamingApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		9E78D6C02D528F3700B216A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AudioStreamingApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 325SNGXV22;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bg.newhorizons.AudioStreamingApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E78D6AB2D528F3300B216A9 /* Build configuration list for PBXProject "AudioStreamingApp" */ = {
+		9EC72EAB2D5BB29C0019E05D /* Build configuration list for PBXProject "DemoUIKitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E78D6BC2D528F3700B216A9 /* Debug */,
-				9E78D6BD2D528F3700B216A9 /* Release */,
+				9EC72EC62D5BB2A00019E05D /* Debug */,
+				9EC72EC72D5BB2A00019E05D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E78D6BE2D528F3700B216A9 /* Build configuration list for PBXNativeTarget "AudioStreamingApp" */ = {
+		9EC72EC32D5BB2A00019E05D /* Build configuration list for PBXNativeTarget "DemoUIKitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E78D6BF2D528F3700B216A9 /* Debug */,
-				9E78D6C02D528F3700B216A9 /* Release */,
+				9EC72EC42D5BB2A00019E05D /* Debug */,
+				9EC72EC52D5BB2A00019E05D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9E78D6A82D528F3300B216A9 /* Project object */;
+	rootObject = 9EC72EA82D5BB29C0019E05D /* Project object */;
 }
