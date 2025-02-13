@@ -10,21 +10,11 @@ import SwiftUI
 struct MenuView: View {
     var body: some View {
         ScrollView {
-            LazyVStack{
-                ForEach(0..<500000) { item in
-                    HStack {
-                        VStack {
-                            Text("Item \(item + 1)")
-                            Text("Subtitle")
-                                .font(.system(size: 12))
-                                .foregroundStyle(.gray)
-                        }
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .foregroundStyle(.gray)
-                    }
-                    .padding()
-                    Divider()
+            VStack {
+                ForEach(0..<5) { item in
+                    Circle()
+                        .fill(LinearGradient(colors: [.pink, .cyan], startPoint: .top, endPoint: .bottomLeading))
+                        .frame(height: 100)
                 }
                 
             }
