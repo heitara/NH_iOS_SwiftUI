@@ -8,6 +8,7 @@ This repository contains materials which are used in the course for iOS programm
 * [Homework 2](./homework/week2.md)
 * [Homework 3](./homework/week3.md)
 * [Homework 4](./homework/week4.md)
+* [Homework 5](./homework/week5.md)
 
 ## Topics
 
@@ -105,4 +106,62 @@ A short list of the covered topics in each lecture.
             1. what buttons
             1. where they should be located
             1. test with real users (ask them questions, video recording)
-    1. 
+1. XCode organization
+    1. Left Panel (Navigator)
+        1. Project Navigation
+        1. Useful shortcuts - CMD + Shift + O
+        1. Git integration
+        1. Bookmarks Navigator
+        1. Find Navigator (Search)
+        1. Issue Navigator
+        1. Test Navigator
+        1. Debug Navigator
+        1. Breakpoints Navigator
+        1. Report Navigator
+    1. Right Panel (Inspector)
+        1. File inspector
+        1. History inspector
+        1. Quick Help Inspector
+        1. Accessibility inspector
+        1. Attributes inspector
+    1. Header row
+    1. Different simulators
+    1. Schemes in Xcode
+    1. Debug Area
+        1. Console (on the right)
+            1. Executable tab - render logs from a simulator
+            1. Previews tab - render the logs from Canvas
+        1. Variables View (on the left)
+## Week 5
+1. SwiftUI Basics
+    1. Imperative programming
+    1. Declarative programming
+        1. View
+        1. State
+    1. Text
+    1. Image
+    1. Shapes
+    1. Containers
+    1. Composing views
+    1. ViewModifiers 
+        1. font
+        1. resizable
+        1. different initializers
+        1. use the best initializer
+1.  SwiftUI Containers
+    1. Security, sensitive data and how to handle it
+    1. Legal rules
+    1. Accessibility in your app
+    1. Multiplatform projects with SwiftUI
+    1. Shared code between targets
+    1. Different containers in SwiftUI
+        1. VStack, HStack, ZStack
+        1. Shapes (which are Views)
+        1. Spacer
+        1. Divider
+        1. LazyHStack
+        1. LazyVStack
+        1. ScrollView
+        1. ForEach (basic only)
+        1. Grid
+        1. ViewModifier * (to define one for a shape)
