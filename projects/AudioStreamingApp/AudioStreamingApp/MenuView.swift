@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct MenuView: View {
+    var movies: [Movie] = readJSON()
     let gradient = LinearGradient(colors: [.pink, .cyan], startPoint: .top, endPoint: .bottomLeading)
     var body: some View {
-        ScrollView(.horizontal) {
-            LazyHGrid(rows: [GridItem(), GridItem()]) {
-                ForEach(1..<1000) { item in
-                    ZStack {
-                        Circle()
-                            .fillAndHeight(gradient: gradient)
-                        Text("Item: \(item)")
-                            
+        VStack {
+            ScrollView {
+                LazyVStack {
+                    ForEach(movies, id: \.title) { item in
+                        Text(item.title)
                     }
-//                    .background(item % 2 == 0 ? Color.blue : .green)
                 }
+            }
+            Button("Read file!") {
+//                let items = readJSON()
+                // todo
             }
         }
     }
