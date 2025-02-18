@@ -35,6 +35,12 @@ struct MenuView: View {
             Circle()
                 .fillAndHeight(gradient: gradient)
         }
+        .background(Color.cyan)
+        .overlay(alignment: .bottomLeading) {
+            Button("Hello!") {
+                // nothing
+            }
+        }
     }
 }
 
