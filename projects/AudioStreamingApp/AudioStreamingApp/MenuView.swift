@@ -14,10 +14,9 @@ struct MenuView: View {
         VStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(Array(movies.enumerated()), id: \.element) { index, item in
+                    ForEach(movies, id: \.title) { item in
                         VStack {
                             HStack {
-                                Text("\(index + 1). 🎬")
                                 Text(item.title)
                                 
                             }
