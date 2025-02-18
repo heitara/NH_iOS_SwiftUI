@@ -13,7 +13,8 @@ struct AudioStreamingAppApp: App {
         WindowGroup {
 //            ContentView()
 //            ContainersView()
-            MenuView()
+//            MenuView()
+            LoginScreen()
         }
     }
 }
