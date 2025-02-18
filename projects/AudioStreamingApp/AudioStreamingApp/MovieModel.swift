@@ -28,6 +28,10 @@ extension Movie: Identifiable {
     
 }
 
+extension Movie: Hashable {
+    
+}
+
 
 func readJSON() -> [Movie] {
     if let filepath = Bundle.main.path(forResource: "movies", ofType: "json") {

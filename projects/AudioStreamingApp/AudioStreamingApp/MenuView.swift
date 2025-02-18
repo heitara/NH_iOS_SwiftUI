@@ -14,8 +14,19 @@ struct MenuView: View {
         VStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(movies, id: \.title) { item in
-                        Text(item.title)
+                    ForEach(Array(movies.enumerated()), id: \.element) { index, item in
+                        VStack {
+                            HStack {
+                                Text("\(index + 1). 🎬")
+                                Text(item.title)
+                                
+                            }
+                            Button {
+                                
+                            } label: {
+                                Text("Watch it now \(Image(systemName: "popcorn"))!")
+                            }
+                        }
                     }
                 }
             }
