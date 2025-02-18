@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct MenuView: View {
+    let gradient = LinearGradient(colors: [.pink, .cyan], startPoint: .top, endPoint: .bottomLeading)
     var body: some View {
-        ScrollView(.horizontal) {
-            LazyHStack {
-                ForEach(0..<500) { item in
-                    Circle()
-                        .fill(LinearGradient(colors: [.pink, .cyan], startPoint: .top, endPoint: .bottomLeading))
-                        .frame(height: 100)
-                }
+        Grid {
+            GridRow {
+                Circle()
+                    .fill(gradient)
+                    .frame(height: 100)
+                Circle()
+                    .fill(gradient)
+                    .frame(height: 100)
+            }
+            GridRow {
+                Rectangle()
+                    .fill(gradient)
+                    .frame(height: 100)
+                Rectangle()
+                    .fill(gradient)
+                    .frame(height: 100)
             }
         }
+        .fixedSizeAndGreenColor()
     }
 }
 
