@@ -10,9 +10,9 @@ import SwiftUI
 struct MenuView: View {
     let gradient = LinearGradient(colors: [.pink, .cyan], startPoint: .top, endPoint: .bottomLeading)
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: [GridItem(.fixed(50)), GridItem(.fixed(150))]) {
-                ForEach(1..<100) { item in
+        ScrollView(.horizontal) {
+            LazyHGrid(rows: [GridItem(), GridItem()]) {
+                ForEach(1..<1000) { item in
                     ZStack {
                         Circle()
                             .fillAndHeight(gradient: gradient)
