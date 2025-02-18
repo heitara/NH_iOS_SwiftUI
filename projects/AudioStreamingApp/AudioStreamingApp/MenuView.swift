@@ -12,27 +12,17 @@ struct MenuView: View {
     let gradient = LinearGradient(colors: [.pink, .cyan], startPoint: .top, endPoint: .bottomLeading)
     var body: some View {
         VStack {
-            ScrollView {
-                LazyVStack {
-                    ForEach(movies, id: \.title) { item in
-                        VStack {
-                            HStack {
-                                Text(item.title)
-                                
-                            }
-                            Button {
-                                
-                            } label: {
-                                Text("Watch it now \(Image(systemName: "popcorn"))!")
-                            }
-                        }
-                    }
+            Circle()
+                .fillAndHeight(gradient: gradient)
+            GeometryReader { geometry in
+                Text("Size: \(geometry.size)")
+                Button("Hello") {
+                    
                 }
+                .offset(CGSize(width: geometry.size.width / 2, height: geometry.size.height / 2))
             }
-            Button("Read file!") {
-//                let items = readJSON()
-                // todo
-            }
+            Circle()
+                .fillAndHeight(gradient: gradient)
         }
     }
 }
