@@ -9,6 +9,7 @@ This repository contains materials which are used in the course for iOS programm
 * [Homework 3](./homework/week3.md)
 * [Homework 4](./homework/week4.md)
 * [Homework 5](./homework/week5.md)
+* [Homework 6](./homework/week6.md)
 
 ## Topics
 
@@ -165,3 +166,29 @@ A short list of the covered topics in each lecture.
         1. ForEach (basic only)
         1. Grid
         1. ViewModifier * (to define one for a shape)
+## Week 6
+1. SwiftUI Containers
+    1. ViewModifiers - how to extend the `Shape` protocol
+    1. LazyHGrid and LazyVGrid
+        1. items which are position in more than one column or row
+    1. ForEach
+        1. with a Range
+        1. with collection
+        1. with enumerated collection
+        1. Recap: What is a KeyPath `\.self`
+    1. Parsing JSON
+        1. Read a file from app's bundle
+        1. Implement custom model
+        1. Implement codable protocol
+        1. Use JSONDecoder to parse the JSON from String
+        1. TODO: Read Data directly from .json file.
+    1. Debugging in Xcode
+        1. Breakpoints
+        1. lldb console - p variable
+        1. Step In, Step Out
+        1. Conditional breakpoints
+    1. GeometryReader - how to position items precisely
+    1. Custom Layout by implementing Layout protocol
+    1. Overlay - how to position view(s) on top
+    1. @State
+    1. @Binding
