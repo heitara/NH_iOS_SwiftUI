@@ -21,11 +21,9 @@ struct MenuView: View {
             }
             GridRow {
                 Rectangle()
-                    .fill(gradient)
-                    .frame(height: 100)
+                    .fillAndHeight(gradient: gradient)
                 Rectangle()
-                    .fill(gradient)
-                    .frame(height: 100)
+                    .fillAndHeight(gradient: gradient)
             }
         }
         .fixedSizeAndGreenColor()

@@ -29,4 +29,10 @@ extension Shape {
             .fill(Color.green)
             .frame(height: 100)
     }
+    
+    func fillAndHeight(gradient: LinearGradient) -> some View {
+        self
+            .fill(gradient)
+            .frame(height: 100)
+    }
 }
