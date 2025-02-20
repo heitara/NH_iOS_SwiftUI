@@ -30,60 +30,35 @@ class MyState2 {
 //@Observable
 
 struct LoginScreen: View {
-    @State var username: String
-    @State var password: String
-    @State var showLogin: Bool
-    
-//    @StateObject var internalState = MyState()
-    
+    @ObservedObject var viewModel: LoginScreenViewModel
     init(username: String = "", password: String = "", showLogin: Bool = true) {
-        self.username = username
-        self.password = password 
-        self.showLogin = showLogin
-    }
-    
-    var isAdmin: Bool {
-        username == "admin"
+        self.viewModel = LoginScreenViewModel(username: username, password: password, showLogin: showLogin)
     }
     
     var body: some View {
         let _ = print("render...")
         VStack(alignment: .leading) {
-//            HStack {
-//                Text("Username:")
-//                TextField("username", text: $username)
-//            }
-            if showLogin {
-                LabeledFieldView(title: "Username:", hint: "username", value: $username)
-                LabeledFieldView(title: "Password:", hint: "password", value: $password)
+            if viewModel.showLogin {
+                LabeledFieldView(title: "Username:", hint: "username", value: $viewModel.username)
+                LabeledFieldView(title: "Password:", hint: "password", value: $viewModel.password)
             }
             Button {
-//                clearFields()
-                showLogin.toggle()
+//                viewModel.clearFields()
+                viewModel.toggle()
             } label: {
                 Image(systemName: "xmark.circle")
             }
-            if isAdmin {
+            if viewModel.isAdmin {
                 Image(systemName: "person.badge.key")
             }
             
             Spacer()
             Button {
-                loginAction()
+                viewModel.loginAction()
             } label: {
                 Text("Login")
             }
         }
-    }
-    
-    func loginAction() {
-        print("username = \(username)")
-        print("password = \(password)")
-    }
-    
-    func clearFields() {
-        username = ""
-        password = ""
     }
 }
 
