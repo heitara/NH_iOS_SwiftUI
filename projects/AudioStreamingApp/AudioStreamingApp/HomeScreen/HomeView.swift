@@ -11,18 +11,35 @@ struct HomeView: View {
     @State var viewModel: LoginScreenViewModel
     
     var body: some View {
-        NavigationStack {
-            List {
-                NavigationLink {
-                    ProfileView()
-                        .toolbarTitleDisplayMode(.inline)
-                        .navigationTitle("Details")
-                } label: {
-                    Text("Profile")
+        TabView {
+            Tab("Login", systemImage: "tray.and.arrow.down.fill") {
+                LoginScreen()
+            }
+            .badge(2)
+
+
+            Tab("Sent", systemImage: "tray.and.arrow.up.fill") {
+                EmptyView()
+            }
+
+
+            Tab("Profile", systemImage: "person.crop.circle.fill") {
+                NavigationStack {
+                    List {
+                        NavigationLink {
+                            ProfileView()
+                                .toolbarTitleDisplayMode(.inline)
+                                .navigationTitle("Details")
+                        } label: {
+                            Text("Profile")
+                        }
+                    }
+                    .navigationTitle("Hello \(viewModel.username)!")
                 }
             }
-            .navigationTitle("Hello \(viewModel.username)!")
+            .badge("!")
         }
+        
         .environment(viewModel)
     }
 }
