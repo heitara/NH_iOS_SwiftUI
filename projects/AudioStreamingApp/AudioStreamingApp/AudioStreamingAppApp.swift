@@ -15,6 +15,8 @@ struct AudioStreamingAppApp: App {
 //            ContainersView()
 //            MenuView()
             LoginScreen()
+            
+//            LoginScreenWithState() // when using state, no extra rendering
         }
     }
 }

@@ -25,6 +25,7 @@ class LoginScreenViewModel: ObservableObject {
     
     func toggle() {
         showLogin.toggle()
+        print("[VM] Toggle showLogin = \(showLogin)")
     }
     var isAdmin: Bool {
         username == "admin"
