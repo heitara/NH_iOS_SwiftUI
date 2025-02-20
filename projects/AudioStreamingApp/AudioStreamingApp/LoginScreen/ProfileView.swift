@@ -7,7 +7,9 @@
 import SwiftUI
 
 struct ProfileView: View {
-    var loginViewModel: LoginScreenViewModel
+    @Environment(LoginScreenViewModel.self) var loginViewModel
+    @Environment(\.layoutDirection) var direction
+    
     var body: some View {
         HStack {
             Image(systemName: "person.circle")
@@ -16,10 +18,13 @@ struct ProfileView: View {
                 .foregroundStyle(Color.green)
             Text(loginViewModel.username)
                 .font(.title2)
+//            Text("Direction: \(direction)")
         }
     }
 }
 
 #Preview {
-    ProfileView(loginViewModel: LoginScreenViewModel(username: "Admin", password: "", showLogin: false))
+    ProfileView()
+        .environment(\.layoutDirection, .rightToLeft)
+        .environment(LoginScreenViewModel(username: "Admin", password: "", showLogin: false))
 }

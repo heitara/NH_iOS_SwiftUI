@@ -40,8 +40,7 @@ struct LoginScreen: View {
         let _ = print("render...")
         VStack(alignment: .leading) {
             if viewModel.showLogin {
-                Text("Missing login")
-            LabeledFieldView(title: "Username:", hint: "username", value: $viewModel.username)
+                LabeledFieldView(title: "Username:", hint: "username", value: $viewModel.username)
                 LabeledFieldView(title: "Password:", hint: "password", value: $viewModel.password)
             }
             Button {
@@ -55,7 +54,7 @@ struct LoginScreen: View {
             }
             
             HStack {
-//                CustomPanelView()
+                CustomPanelView()
             }
             Spacer()
             Button {
@@ -64,7 +63,7 @@ struct LoginScreen: View {
                 Text("Login")
             }
         }
-//        .environmentObject(viewModel)
+        .environment(viewModel)
     }
 }
 
