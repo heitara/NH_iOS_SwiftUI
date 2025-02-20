@@ -30,12 +30,17 @@ class MyState2 {
 //@Observable
 
 struct LoginScreen: View {
-    @State var username: String = ""
-    @State var password: String = ""
-    
-    @State var showLogin = true
+    @State var username: String
+    @State var password: String
+    @State var showLogin: Bool
     
 //    @StateObject var internalState = MyState()
+    
+    init(username: String = "", password: String = "", showLogin: Bool = true) {
+        self.username = username
+        self.password = password 
+        self.showLogin = showLogin
+    }
     
     var isAdmin: Bool {
         username == "admin"

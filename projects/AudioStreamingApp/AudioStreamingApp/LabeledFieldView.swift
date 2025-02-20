@@ -9,8 +9,24 @@ import SwiftUI
 
 struct LabeledFieldView: View {
     let title: String
-    var hint: String = ""
+    let hint: String
     @Binding var value: String
+//    private var _value: Binding<String>
+//    var value: String {
+//        get {
+//            _value.wrappedValue
+//        }
+//        set {
+//            _value.wrappedValue = newValue
+//        }
+//    }
+    
+    init(title: String, hint: String, value: Binding<String>) {
+        self.title = title
+        self.hint = hint
+        self._value = value
+    }
+    
     var body: some View {
         HStack {
             Text(title)
