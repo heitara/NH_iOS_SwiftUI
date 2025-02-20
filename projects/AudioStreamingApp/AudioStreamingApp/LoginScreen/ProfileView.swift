@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct ProfileView: View {
-    var loginViewModel: LoginScreenViewModel
+    @EnvironmentObject var loginViewModel: LoginScreenViewModel
     var body: some View {
         HStack {
             Image(systemName: "person.circle")
@@ -21,5 +21,6 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView(loginViewModel: LoginScreenViewModel(username: "Admin", password: "", showLogin: false))
+    ProfileView()
+        .environmentObject(LoginScreenViewModel(username: "Admin", password: "", showLogin: false))
 }

@@ -20,8 +20,8 @@ class MyState2 {
 //@State -> structures, enums (value types)
 //@Binding -> to give write permission to (sub)*-view
 //----------
+//ObservableObject protocol, use @Published
 //@StateObject -> like @State but for ref. types (inst. of classes)
-//ObservableObject protocol
 //@ObservedObject
 //@EnvironmentObject
 //@Environment
@@ -54,7 +54,7 @@ struct LoginScreen: View {
             }
             
             HStack {
-                ProfileView(loginViewModel: viewModel)
+                CustomPanelView()
             }
             Spacer()
             Button {
@@ -63,6 +63,7 @@ struct LoginScreen: View {
                 Text("Login")
             }
         }
+        .environmentObject(viewModel)
     }
 }
 
