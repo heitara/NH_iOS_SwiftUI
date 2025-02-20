@@ -27,22 +27,23 @@ class MyState2 {
 //@Environment
 
 //iOS 17
-//@Observable
+//@Observable -> @State
 
 struct LoginScreen: View {
-    @StateObject var viewModel: LoginScreenViewModel
+    @State var viewModel: LoginScreenViewModel
     
     init(username: String = "", password: String = "", showLogin: Bool = true) {
-        self._viewModel = StateObject(wrappedValue: LoginScreenViewModel(username: username, password: password, showLogin: showLogin))
+        self.viewModel =  LoginScreenViewModel(username: username, password: password, showLogin: showLogin)
     }
     
     var body: some View {
         let _ = print("render...")
         VStack(alignment: .leading) {
-//            if viewModel.showLogin {
-                LabeledFieldView(title: "Username:", hint: "username", value: $viewModel.username)
+            if viewModel.showLogin {
+                Text("Missing login")
+            LabeledFieldView(title: "Username:", hint: "username", value: $viewModel.username)
                 LabeledFieldView(title: "Password:", hint: "password", value: $viewModel.password)
-//            }
+            }
             Button {
 //                viewModel.clearFields()
                 viewModel.toggle()
@@ -54,7 +55,7 @@ struct LoginScreen: View {
             }
             
             HStack {
-                CustomPanelView()
+//                CustomPanelView()
             }
             Spacer()
             Button {
@@ -63,7 +64,7 @@ struct LoginScreen: View {
                 Text("Login")
             }
         }
-        .environmentObject(viewModel)
+//        .environmentObject(viewModel)
     }
 }
 

@@ -10,8 +10,8 @@ import SwiftUI
 struct CustomPanelView: View {
     var body: some View {
         VStack {
-            ProfileView()
-                .padding()
+//            ProfileView()
+//                .padding()
         }
         .background(Color.gray)
         .clipShape(Capsule())

@@ -5,12 +5,13 @@
 //  Created by Emil Atanasov on 02/20/25.
 //
 
-import Combine
+import SwiftUI
 
-class LoginScreenViewModel: ObservableObject {
-    @Published var username: String
-    @Published var password: String
-    @Published var showLogin: Bool
+@Observable
+class LoginScreenViewModel {
+    var username: String
+    var password: String
+    var showLogin: Bool
     
     init(username: String, password: String, showLogin: Bool) {
         self.username = username
