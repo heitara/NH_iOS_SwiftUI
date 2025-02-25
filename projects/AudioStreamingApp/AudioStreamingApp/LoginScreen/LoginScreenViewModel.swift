@@ -48,14 +48,18 @@ class LoginScreenViewModel {
             
             let (data, response) = try await URLSession.shared.data(for: request)
             
-            let responseAsString = String(data: data, encoding: .utf8) ?? "Unable to decode!"
-            print("raw: ", responseAsString)
+//            let responseAsString = String(data: data, encoding: .utf8) ?? "Unable to decode!"
+//            print("raw: ", responseAsString)
             
             let decoder = JSONDecoder()
             
             let item = try decoder.decode(Todo.self, from: data)
             print("Item: ", item)
             
+            let localFileUrl = URL.documentsDirectory.appending(path: "todo_\(item.id).txt")
+            
+            try data.write(to: localFileUrl, options: [.atomic, .completeFileProtection])
+            print("URL: \(localFileUrl.absoluteString)")
         
         } catch {
             print(error)
