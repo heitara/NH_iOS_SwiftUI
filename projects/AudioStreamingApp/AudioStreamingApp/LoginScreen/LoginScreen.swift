@@ -67,7 +67,9 @@ struct LoginScreen: View {
                 }
                 Spacer()
                 Button {
-                    viewModel.loadData()
+                    Task {
+                        await viewModel.loadData()
+                    }
                 } label: {
                     Text("Load!")
                 }

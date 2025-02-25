@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		9E97AAAE2D551B1D00F38E39 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E97AAAD2D551B1D00F38E39 /* AVFoundation.framework */; };
 		9EDFE6462D6E218500D979A4 /* DebugSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9EDFE6452D6E218500D979A4 /* DebugSwift */; };
-		9EDFE64B2D6E29A500D979A4 /* SFSymbolKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9EDFE64A2D6E29A500D979A4 /* SFSymbolKit */; };
-		9EDFE64E2D6E2AE400D979A4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9EDFE64D2D6E2AE400D979A4 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +30,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EDFE6462D6E218500D979A4 /* DebugSwift in Frameworks */,
-				9EDFE64E2D6E2AE400D979A4 /* Alamofire in Frameworks */,
-				9EDFE64B2D6E29A500D979A4 /* SFSymbolKit in Frameworks */,
 				9E97AAAE2D551B1D00F38E39 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,8 +83,6 @@
 			name = AudioStreamingApp;
 			packageProductDependencies = (
 				9EDFE6452D6E218500D979A4 /* DebugSwift */,
-				9EDFE64A2D6E29A500D979A4 /* SFSymbolKit */,
-				9EDFE64D2D6E2AE400D979A4 /* Alamofire */,
 			);
 			productName = AudioStreamingApp;
 			productReference = 9E78D6B02D528F3300B216A9 /* AudioStreamingApp.app */;
@@ -120,8 +114,6 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				9EDFE6442D6E218500D979A4 /* XCRemoteSwiftPackageReference "DebugSwift" */,
-				9EDFE6492D6E29A500D979A4 /* XCRemoteSwiftPackageReference "SFSymbolKit" */,
-				9EDFE64C2D6E2AE400D979A4 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9E78D6B12D528F3300B216A9 /* Products */;
@@ -373,22 +365,6 @@
 				minimumVersion = 0.3.9;
 			};
 		};
-		9EDFE6492D6E29A500D979A4 /* XCRemoteSwiftPackageReference "SFSymbolKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dl-alexandre/SFSymbolKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
-			};
-		};
-		9EDFE64C2D6E2AE400D979A4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.10.2;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -396,16 +372,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9EDFE6442D6E218500D979A4 /* XCRemoteSwiftPackageReference "DebugSwift" */;
 			productName = DebugSwift;
-		};
-		9EDFE64A2D6E29A500D979A4 /* SFSymbolKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9EDFE6492D6E29A500D979A4 /* XCRemoteSwiftPackageReference "SFSymbolKit" */;
-			productName = SFSymbolKit;
-		};
-		9EDFE64D2D6E2AE400D979A4 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9EDFE64C2D6E2AE400D979A4 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

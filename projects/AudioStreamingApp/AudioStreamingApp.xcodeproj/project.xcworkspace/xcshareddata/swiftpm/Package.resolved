@@ -1,15 +1,6 @@
 {
-  "originHash" : "f3d1ebc0daff6144c960f2fca53f2ba5f22d64dce94b69128e790eac71de0a74",
+  "originHash" : "73fd119785e0af87cbb05b076024ed3d2b9bb2b6a587270989507113092fee03",
   "pins" : [
-    {
-      "identity" : "alamofire",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Alamofire/Alamofire.git",
-      "state" : {
-        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
-        "version" : "5.10.2"
-      }
-    },
     {
       "identity" : "debugswift",
       "kind" : "remoteSourceControl",
@@ -17,15 +8,6 @@
       "state" : {
         "revision" : "a5cdece2984da5c26cb9a7c57f9c9533b8eea0d3",
         "version" : "0.3.9"
-      }
-    },
-    {
-      "identity" : "sfsymbolkit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/dl-alexandre/SFSymbolKit",
-      "state" : {
-        "revision" : "871245c109146c6b967b9057d9dba455d82ab46e",
-        "version" : "1.0.1"
       }
     }
   ],
