@@ -29,6 +29,8 @@ class MyState2 {
 //iOS 17
 //@Observable -> @State
 
+import SFSymbolKit
+
 struct LoginScreen: View {
     @State var viewModel: LoginScreenViewModel
     
@@ -57,10 +59,18 @@ struct LoginScreen: View {
                 CustomPanelView()
             }
             Spacer()
-            Button {
-                viewModel.loginAction()
-            } label: {
-                Text("Login")
+            HStack {
+                Button {
+                    viewModel.loginAction()
+                } label: {
+                    Text("Login")
+                }
+                Spacer()
+                Button {
+                    viewModel.loadData()
+                } label: {
+                    Text("Load!")
+                }
             }
         }
         .environment(viewModel)

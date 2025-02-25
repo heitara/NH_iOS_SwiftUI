@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import DebugSwift
 
 @main
 struct AudioStreamingAppApp: App {
+    @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
+    
     var viewModel = LoginScreenViewModel(username: "Peter", password: "", showLogin: false)
     var body: some Scene {
         WindowGroup {

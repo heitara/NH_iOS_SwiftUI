@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Alamofire
 
 @Observable
 class LoginScreenViewModel {
@@ -35,5 +36,12 @@ class LoginScreenViewModel {
     func loginAction() {
         print("username = \(username)")
         print("password = \(password)")
+    }
+    
+    func loadData() {
+        AF.request("https://jsonplaceholder.typicode.com/todos/1").response { response in
+            debugPrint(response)
+        }
+        
     }
 }
