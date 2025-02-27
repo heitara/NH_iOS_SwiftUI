@@ -17,6 +17,10 @@ class MyState2 {
 }
 
 
+func readAFile() throws {
+    // do something
+}
+
 //@State -> structures, enums (value types)
 //@Binding -> to give write permission to (sub)*-view
 //----------
@@ -34,11 +38,13 @@ import SFSymbolKit
 struct LoginScreen: View {
     @State var viewModel: LoginScreenViewModel
     @State var url: URL
-    @State var showWebView = true
+    @State var showWebView: Bool
+    var list = ["Swift", "is", "cool", "!"]
     
     init(username: String = "", password: String = "", showLogin: Bool = true) {
         self.viewModel =  LoginScreenViewModel(username: username, password: password, showLogin: showLogin)
         self.url = URL(string: "https://google.com/")!
+        self.showWebView = true
     }
     
     var body: some View {
@@ -71,6 +77,11 @@ struct LoginScreen: View {
             HStack {
                 Button {
                     viewModel.loginAction()
+                    do {
+                        try readAFile()
+                    } catch {
+                        print("Error:", error)
+                    }
                 } label: {
                     Text("Login")
                 }

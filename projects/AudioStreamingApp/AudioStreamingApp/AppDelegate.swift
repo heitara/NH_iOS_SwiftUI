@@ -11,7 +11,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         DebugSwift
             .setup()
 //            .show()
-
+ 
         // To fix alamorife `uploadProgress`
 //        DebugSwift.Network.delegate = self
 
