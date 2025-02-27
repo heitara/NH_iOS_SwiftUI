@@ -33,9 +33,12 @@ import SFSymbolKit
 
 struct LoginScreen: View {
     @State var viewModel: LoginScreenViewModel
+    @State var url: URL
+    @State var showWebView = true
     
     init(username: String = "", password: String = "", showLogin: Bool = true) {
         self.viewModel =  LoginScreenViewModel(username: username, password: password, showLogin: showLogin)
+        self.url = URL(string: "https://google.com/")!
     }
     
     var body: some View {
@@ -48,6 +51,9 @@ struct LoginScreen: View {
             Button {
 //                viewModel.clearFields()
                 viewModel.toggle()
+//                url = URL(string: "https://www.newhorizons.bg/")!
+                showWebView.toggle()
+                
             } label: {
                 Image(systemName: "xmark.circle")
             }
@@ -57,6 +63,9 @@ struct LoginScreen: View {
             
             HStack {
                 CustomPanelView()
+            }
+            if showWebView {
+                WebView(url: url)
             }
             Spacer()
             HStack {
