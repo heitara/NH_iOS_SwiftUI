@@ -8,6 +8,9 @@
 import SwiftUI
 import WebKit
 
+//let d: Dictionary<String, String> = {:}
+//String? is Optional<String>
+
 struct WebView: UIViewRepresentable {
     @Environment(LoginScreenViewModel.self) var vm: LoginScreenViewModel
     let url: URL
@@ -32,12 +35,12 @@ struct WebView: UIViewRepresentable {
         webView.load(request)
     }
     
-    func makeCoordinator() -> Coordinator {
+    func makeCoordinator() -> Coordinator2 {
         print("\(#function)")
-        return Coordinator(self)
+        return Coordinator2(self)
     }
     
-    class Coordinator: NSObject, WKNavigationDelegate {
+    class Coordinator2: NSObject, WKNavigationDelegate {
         var parent: WebView
         
         init (_ parent: WebView) {
