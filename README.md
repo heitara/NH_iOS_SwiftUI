@@ -192,3 +192,37 @@ A short list of the covered topics in each lecture.
     1. Overlay - how to position view(s) on top
     1. @State
     1. @Binding
+1. Generics - how to create generyc types.
+1. Data Flow in prior iOS 17
+    1. @State
+    1. @Binding
+    1. ObservableObject protocol
+    1. @StateObject
+    1. @ObservedObject
+    1. @EnvironmentObject
+1. Data Flow in iOS 17+
+    1. @Observable macro
+    1. @State
+    1. @Environment
+1. NavigationStack, TabView, LinkView
+
+## Week 7
+1. Add External depenedencies using SWP
+    1. alternative dependency manager - cocoa pods (uses Ruby)
+    1. DebugSwift
+    1. Alamofire 
+1. Load data from web address 
+    1. using Alamofire
+    1. using URLSession
+    1. await/async and Task
+1. Save file locally on the phone
+
+
+1. How to integrate SwiftUI in UIKit
+1. How to Integrate UIKit components in SwiftUI
+1. Final projects:
+    1. [library](homework/finalProjects/library.md)
+    1. [recipes](homework/finalProjects/recipes.md)
+    1. [reminder](homework/finalProjects/reminder.md)
+1. Re-cap of the [international exam](https://certiport.pearsonvue.com/Certifications/Apple/App-Dev-With-Swift/Certify).
+1. Useful book: `Develop in Swift PA CS Principles` with Xcode 15 (this is still using UIKit, so it's not completely updated to match the latest certificate requirements)
